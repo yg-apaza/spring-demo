@@ -1,0 +1,24 @@
+<h1>List of my cats <i class="fas fa-cat"></i></h1>
+
+<button type="button" class="btn btn-success my-3" [routerLink]="['/add']">
+  <i class="fas fa-plus"></i> Add new cat
+</button>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Age</th>
+      <th scope="col">Breed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let cat of cats">
+      <td>{{ cat.id }}</td>
+      <td>{{ cat.name }}</td>
+      <td>{{ cat.age }} year(s)</td>
+      <td>{{ cat.breed }}</td>
+    </tr>
+  </tbody>
+</table>
