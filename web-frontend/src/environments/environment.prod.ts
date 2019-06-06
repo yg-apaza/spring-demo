@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  backend_path: 'localhost:8080/springbackend'
+  backend_path: 'https://spring-webmvc-sample.herokuapp.com'
 };
